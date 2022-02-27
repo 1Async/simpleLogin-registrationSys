@@ -8,9 +8,13 @@ const express = require('express'),
 //midelwars
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //routes
 app.use('/userInfo', userInfoRouter);
+
+//static images folder
+app.use('/Images/User', express.static('./Images/User'));
 
 
 
