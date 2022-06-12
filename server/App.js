@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/userInfo', userInfoRouter);
 
 //static images folder
-app.use('/Images/User', express.static('./Images/User'));
+app.use('/Images', express.static('../Images'));
 
 
 
